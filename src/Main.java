@@ -5,9 +5,14 @@ public class Main {
         int replenishmentAccount = 3450;
         int bonus;
 
-        if ( replenishmentAccount > 1000 ) { bonus = replenishmentAccount / 100; } else { bonus = 0; }
+        if ( replenishmentAccount > 1000 ) {
+            bonus = replenishmentAccount / 100;
+        }
+        else {
+            bonus = 0;
+        }
 
-        System.out.println(" Общий баланс счета: " + (initialAccount + replenishmentAccount + bonus) + " руб." );
+        System.out.println(" Общий баланс счета: " + (initialAccount + replenishmentAccount + bonus) + " руб.");
         System.out.println("Бонусный счет:" + bonus + " руб.");
     }
 }
